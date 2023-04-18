@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#5865F2">
-    <title>Token Getter</title>
+    <meta name="theme-color" content="#000000">
+    <title>Discord Token Getter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
@@ -31,7 +31,7 @@ html { scroll-behavior: smooth; }
       body {
         width: 100%;
         min-height: 100vh;
-        background: #1f1f1f;
+        background: #000000;
         /*display: flex;*/
         justify-content: center;
         align-items: center;
@@ -40,9 +40,9 @@ html { scroll-behavior: smooth; }
       .box {
         width: 500px;
         height: auto;
-        background: #222222;
-        box-shadow: 2px 2px 7px #00000031;
-        border-radius: 0.35rem;
+        background: #000;
+        /*box-shadow: 2px 2px 7px #00000031;
+        border-radius: 0.35rem;*/
         
         display: flex;
         align-items: center;
@@ -93,12 +93,12 @@ html { scroll-behavior: smooth; }
         font-size: 20px;
         text-decoration: none;
         border: none;
-        box-shadow: 0px 0px 20px #7289da;
+        /*box-shadow: 0px 0px 20px #7289da;*/
       }
       .copy:hover {
         border: none;
         background: #2c2f33;
-        box-shadow: 0px 0px 20px #7289da;
+        /*box-shadow: 0px 0px 20px #7289da;*/
         font-weight: 500;
       }
       
@@ -161,7 +161,7 @@ window.onload = function () {
           copy_btn.innerHTML = "Copied To Clipboard";
           window.my_timeout = setTimeout(() => {
             copy_btn.innerHTML = bkp;
-          }, 3000);
+          }, 1000);
         } catch (err) {
           alert("Failed To Copy to Clipboard! Please Copy it Manually by Selecting the Token");
           console.log(err);
@@ -185,6 +185,6 @@ $(function () {
 })
 </script>
         <hr>
-        <small><marquee><div style = "color:#ADAEB2">• This web .<br> • This web is in no way affiliated with Discord.</div></small></marquee>
+        <small><marquee><div style = "color:#ADAEB2"> • This web is in no way affiliated with Discord. Please don't share your Discord token with someone.<br></div></small></marquee>
   </body>
 </html>
